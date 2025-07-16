@@ -2,6 +2,7 @@
   height: 413px;
   width: 100%;
   object-fit: cover;
+  border-radius: 8px;
 }
 
 .card__content {
@@ -11,6 +12,10 @@
 }
 
 .card__title {
+  height: 24px;
+  font-weight: 500;
+  line-height: 120%;
+  font-size: 20px;
   display: -webkit-box;
   text-overflow: ellipsis;
   overflow: hidden;
