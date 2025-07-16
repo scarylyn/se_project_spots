@@ -21,8 +21,8 @@
   font-size: 32px;
   line-height: 1;
   display: -webkit-box;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
@@ -31,14 +31,15 @@
 .profile__description {
   margin: 0;
   display: -webkit-box;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
 }
 
 .profile__edit-btn {
+  opacity: 70%;
   margin-top: auto;
 }
 
@@ -66,12 +67,18 @@
   }
 
   .profile__name {
+    max-width: 288px;
     font-size: 20px;
     margin: 0 0 6px;
   }
 
   .profile__description {
+    max-width: 288px;
     margin: 0 0 32px;
+  }
+
+  .profile__edit-btn {
+    height: 16px;
   }
 
   .profile__add-btn {
