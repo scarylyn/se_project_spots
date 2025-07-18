@@ -13,14 +13,13 @@
 
 .card__title {
   height: 24px;
+  max-width: 350px;
   font-weight: 500;
   line-height: 120%;
   font-size: 20px;
-  display: -webkit-box;
   text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
 }
 
 .card__like-btn {
@@ -32,8 +31,17 @@
   opacity: 40%;
 }
 
+.card__like-btn:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+
 @media screen and (max-width: 627px) {
   .card__image {
     height: 288px;
+  }
+
+  .card__title {
+    max-width: 265px;
   }
 }
