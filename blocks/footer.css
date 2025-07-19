@@ -1,5 +1,4 @@
 .footer {
-  border-top: 1px rgba(33, 33, 33, 0.4) solid;
   max-width: 1280px;
   margin: auto;
   display: flex;
@@ -9,15 +8,10 @@
 
 .footer__copyright {
   font-weight: 400;
-  height: 16px;
+  font-size: 16px;
   max-width: 100%;
   line-height: 100%;
   color: rgba(33, 33, 33, 0.7);
   align-self: stretch;
-}
-
-@media screen and (max-width: 627px) {
-  .footer {
-    max-width: 288px;
-  }
+  padding: 50px;
 }
