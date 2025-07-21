@@ -55,6 +55,7 @@
   margin-top: auto;
   background: transparent;
   border: none;
+  gap: 7px;
 }
 
 .profile__edit-btn-pencil {
@@ -84,6 +85,7 @@
 .profile__add-btn-plus {
   width: 12px;
   height: 12px;
+  margin-right: 5px;
 }
 
 .profile__add-btn:hover {
