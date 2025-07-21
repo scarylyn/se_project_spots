@@ -19,10 +19,10 @@ Here's a fun video showing off the page, and talking about some of the work it t
 https://drive.google.com/file/d/11JrPFZWxvXPRbKJ88C-ypVRGhnpmFHAz/view?usp=sharing
 
 **Desktop View**  
-<img src="/images/desktop-view.png">
+<img src="/images/desktop-view.jpg">
 
 **Tablet View**  
-<img src="/images/tablet-view.png">
+<img src="/images/tablet-view.jpg">
 
 **Mobile View**  
-<img src="/images/mobile-view.png">
+<img src="/images/mobile-view.jpg">
