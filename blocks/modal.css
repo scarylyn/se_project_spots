@@ -1,6 +1,5 @@
-/* TODO responsive design aka media queries(Kevin says it should just take some font sizes and pixel values)*/
-
 .modal {
+  visibility: hidden;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: center;
