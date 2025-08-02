@@ -27,7 +27,6 @@ editProfileBtn.addEventListener("click", function () {
 
 editProfileCloseBtn.addEventListener("click", function () {
   editProfileModal.classList.remove("modal_is-opened");
-  editProfileModal.classList.add("modal_is-closed");
 });
 
 newPostBtn.addEventListener("click", function () {
@@ -36,7 +35,6 @@ newPostBtn.addEventListener("click", function () {
 
 newPostCloseBtn.addEventListener("click", function () {
   newPostModal.classList.remove("modal_is-opened");
-  newPostModal.classList.add("modal_is-closed");
 });
 
 function handleEditProfileSubmit(evt) {
@@ -44,7 +42,6 @@ function handleEditProfileSubmit(evt) {
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
   editProfileModal.classList.remove("modal_is-opened");
-  editProfileModal.classList.add("modal_is-closed");
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
@@ -54,7 +51,6 @@ function handleAddCardSubmit(evt) {
   console.log(newPostNameInput.value);
   console.log(newPostLinkInput.value);
   newPostModal.classList.remove("modal_is-opened");
-  newPostModal.classList.add("modal_is-closed");
 }
 
 newPostForm.addEventListener("submit", handleAddCardSubmit);
