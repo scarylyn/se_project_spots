@@ -8,8 +8,6 @@ const editProfileNameInput = editProfileModal.querySelector(
 const editProfileDescriptionInput = editProfileModal.querySelector(
   "#profile-description-input"
 );
-const profileNameEl = document.querySelector(".profile__name");
-const profileDescriptionEl = document.querySelector(".profile__description");
 
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostForm = newPostModal.querySelector(".modal__form");
@@ -17,6 +15,9 @@ const newPostNameInput = newPostForm.querySelector("#card-caption-input");
 const newPostLinkInput = newPostForm.querySelector("#card-image-input");
 const newPostBtn = document.querySelector(".profile__add-btn");
 const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
+
+const profileNameEl = document.querySelector(".profile__name");
+const profileDescriptionEl = document.querySelector(".profile__description");
 
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
@@ -26,6 +27,7 @@ editProfileBtn.addEventListener("click", function () {
 
 editProfileCloseBtn.addEventListener("click", function () {
   editProfileModal.classList.remove("modal_is-opened");
+  editProfileModal.classList.add("modal_is-closed");
 });
 
 newPostBtn.addEventListener("click", function () {
@@ -34,6 +36,7 @@ newPostBtn.addEventListener("click", function () {
 
 newPostCloseBtn.addEventListener("click", function () {
   newPostModal.classList.remove("modal_is-opened");
+  newPostModal.classList.add("modal_is-closed");
 });
 
 function handleEditProfileSubmit(evt) {
@@ -41,6 +44,7 @@ function handleEditProfileSubmit(evt) {
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
   editProfileModal.classList.remove("modal_is-opened");
+  editProfileModal.classList.add("modal_is-closed");
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
@@ -50,6 +54,7 @@ function handleAddCardSubmit(evt) {
   console.log(newPostNameInput.value);
   console.log(newPostLinkInput.value);
   newPostModal.classList.remove("modal_is-opened");
+  newPostModal.classList.add("modal_is-closed");
 }
 
 newPostForm.addEventListener("submit", handleAddCardSubmit);
