@@ -45,7 +45,7 @@
 }
 
 .modal__close-btn:hover {
-  background-image: url(../images/x-dark.svg);
+  opacity: 1;
 }
 
 .modal__title {
