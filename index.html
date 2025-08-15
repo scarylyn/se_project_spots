@@ -104,7 +104,7 @@
         <div class="modal__container">
           <button type="button" class="modal__close-btn"></button>
           <h2 class="modal__title">New Post</h2>
-          <form class="modal__form">
+          <form class="modal__form" required>
             <label for="card-image-input" class="modal__label">
               Image link
               <input
@@ -112,6 +112,7 @@
                 type="url"
                 class="modal__input"
                 placeholder="Paste a link to the picture"
+                required
               />
             </label>
             <label for="card-caption-input" class="modal__label">
