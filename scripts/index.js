@@ -101,6 +101,19 @@ function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
 }
 
+const modalList = document.querySelectorAll(".modal");
+
+modalList.forEach((modal) => {
+  modal.addEventListener("click", () => {
+    closeModal(modal);
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key == "Escape") {
+      closeModal(modal);
+    }
+  });
+});
+
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
