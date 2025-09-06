@@ -69,7 +69,7 @@
   background-image: url(../images/x.svg);
   border: none;
   background-color: transparent;
-  opacity: 40%;
+  opacity: 0.4;
 }
 
 .modal__close-btn:hover {
