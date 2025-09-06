@@ -128,6 +128,10 @@
   color: #2121214d;
 }
 
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
 .modal__submit-btn {
   cursor: pointer;
   border: none;
@@ -144,6 +148,15 @@
 
 .modal__submit-btn:hover {
   background-color: rgba(33, 33, 33, 0.8);
+}
+
+.modal__error {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  display: block;
+  color: rgba(255, 0, 0, 0.7);
+  margin-top: 8px;
 }
 
 @media screen and (max-width: 627px) {
