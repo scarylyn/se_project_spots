@@ -50,6 +50,8 @@ const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 
+const submitBtn = document.querySelector(".modal__submit-btn");
+
 const previewModal = document.querySelector("#preview-modal");
 const previewModalCloseBtn = previewModal.querySelector(
   ".modal__close-btn_type_preview"
@@ -142,6 +144,7 @@ function handleAddCardSubmit(evt) {
   cardsList.prepend(cardElement);
 
   newPostForm.reset();
+  disableBtn(submitBtn, settings);
   closeModal(newPostModal);
 }
 

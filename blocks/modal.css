@@ -150,6 +150,10 @@
   background-color: rgba(33, 33, 33, 0.8);
 }
 
+.modal__submit-btn_invalid {
+  background-color: rgba(33, 33, 33, 0.5);
+}
+
 .modal__error {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 500;
