@@ -1,3 +1,9 @@
+import enableValidation from "../scripts/validation.js";
+import disableBtn from "../scripts/validation.js";
+import settings from "../scripts/validation.js";
+import resetValidation from "../scripts/validation.js";
+import "./index.css";
+
 const initialCards = [
   {
     name: "Golden Gate Bridge",
@@ -123,11 +129,11 @@ modalList.forEach((modal) => {
 });
 
 editProfileBtn.addEventListener("click", function () {
+  openModal(editProfileModal);
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
 
   resetValidation(editProfileForm, settings);
-  openModal(editProfileModal);
 });
 
 editProfileCloseBtn.addEventListener("click", function () {
@@ -153,7 +159,7 @@ function handleEditProfileSubmit(evt) {
   closeModal(editProfileModal);
 }
 
-submitProfileBtn.addEventListener("submit", handleEditProfileSubmit);
+submitProfileBtn.addEventListener("click", handleEditProfileSubmit);
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
@@ -177,3 +183,9 @@ initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
 });
+
+enableValidation(settings);
+
+// this is just a little comment
+// needed a quick change to something
+// so I can do a git test
