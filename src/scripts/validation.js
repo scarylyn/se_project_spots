@@ -44,10 +44,10 @@ const toggleButtonState = (inputList, buttonEl, config) => {
   }
 };
 
-export const disableBtn = (buttonEl, config) => {
+export function disableBtn(buttonEl, config) {
   buttonEl.disabled = true;
   buttonEl.classList.add(config.inactiveButtonClass);
-};
+}
 
 const setEventListeners = (formEl, config) => {
   const inputList = Array.from(formEl.querySelectorAll(config.inputSelector));
