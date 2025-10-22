@@ -15,9 +15,8 @@ She's done and she's beautiful!!!
 You can view the page here:  
 https://scarylyn.github.io/se_project_spots/
 
-Here's a couple of fun videos showing off the page at a couple different progress stages, and talking about some of the work it took to get it looking so snazzy!  
+Here's a fun video showing off the page, and talking about some of the work it took to get it looking so snazzy!  
 https://drive.google.com/file/d/11JrPFZWxvXPRbKJ88C-ypVRGhnpmFHAz/view?usp=sharing
-https://drive.google.com/file/d/19Z0vR6H_VT5VkiGM_7ExS_EzgG686uNg/view?usp=sharing
 
 **Desktop View**  
 <img src="/images/desktop-view.jpg">
